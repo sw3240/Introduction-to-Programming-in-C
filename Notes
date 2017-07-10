@@ -1,0 +1,206 @@
+"Monday, June 26"
+/*List of Linux Commands*/
+
+ls			- directory listing - list the contents of the directory
+pwd			- show current location/show current directory
+mkdir dir		- create directory "dir"
+touch file1		- create/update "file1"
+cat file1		- display contents of "file1"
+locate file		- find all instances of "file"
+sudo "command"	- executes a command while overriding any other obstructing users
+
+
+//cd
+cd dir			- change directory to "dir"/move into "dir"
+cd ..			- move back one level from current directory
+
+//rm
+rm file			- delete file "file"
+rm -r dir		- delete directory "dir"
+rm -f file		- force remove file "file"
+rm -rf dir		- force remove directory "dir"
+
+//cp
+cp file1 file2		- copy "file1" to "file2"
+cp -r dir1 dir2		- copy "dir1" to "dir2" and create "dir2" if "dir2" does not exist yet
+
+//mv
+mv file1 file2		- rename "file1" as "file2"
+mv file1 location1/(location2)/.../(locationx)/(desired location of file1) - move "file1" to "(desired location of file1)"
+
+//gcc
+gcc file1		- compile "file1" to command "./a.out"
+gcc file1 -o run	- compile "file1" to command "./run"
+./run			- play command "./run" of compiled file "file1"
+
+//vim
+vim file1		- edit "file1"
+i  (in vim)      	- enter insert mode (in vim)
+[esc] (after i)  	- leave insert mode (in vim)
+:w (in vim)		- write/set what has been written (in vim)
+:q			- quit vim (in vim)
+:wq			- write and quit vim (in vim)
+
+"Tuesday, June 27"
+
+/*Operators*/
+
+//Arithmetic Operators: 
++  (addition)
+-  (subtraction)
+*  (multiplication)
+/  (division)
+%  (modulus)
+++ (increment)
+-- (decrement)
+
+//Relational Operators: 
+== (is equal?)
+!= (not equal?)
+>  (greater than?)
+<  (less than?)
+>= (greater or equal?) 
+<= (less than or equal?)
+
+//Logical: 
+&& (and)
+|| (or)
+!  (not)
+
+//Bitwise: 
+& (and)
+| (or)
+^ (exclusive or)
+
+/*Types*/
+char 		- single character
+short 		- small integer (at least 16 bytes)(less commonly used)
+int 		- integer
+long 		- large integer (~32 bytes)
+unsigned long 	- doubles representation on the positive side while forbidding the negative capacity
+float 		- single precision floating number (32 bytes) - do not use ==, instead use <
+double 		- double precision (64 bytes)
+
+/*Argument Count*/
+ - test - argc = 1, argv = "./test"
+ - test, 1, 2 - argc = 3, argv = ["./test", "1", "2"]
+
+/*Assignments from June 27:*/
+ - Test what happens when you multiply an int by a char by June 28th
+ - Write a program that finds :
+	- Maximum between 2 numbers 
+	- Maximum between 3 numbers
+	- Check if a number is positive, negative, or zero
+	- Check if a number is even or odd
+	- Input a number, Output a weekday
+	- Input grades from five subjects, then calculate average and output letter grade according to: >90=A >80=B >70=C >60=D <60=F
+ - More challenging: Find the cost of units when the user inputs the number of units for:
+	- The first 50 units = 0.5/unit
+	- Next 100 = 0.75/unit
+	- Next 100 = 1.2/unit
+	- For every unit above 250 = 1.5/unit + 20% surcharge
+
+"Wednesday, June 28"
+/*Exercises*/
+ - Write a program that:
+	- Prints all Natural numbers from 1 to n (input)
+	- Prints all Natural numbers from n to 1
+	- Prints all alphabet from 'a' to 'z'
+	- Prints all even numbers between 1 and n
+	- Prints all odd numbers between 1 and n
+	- Prints the sum of all numbers between 1 and n
+	- Prints the sum of all even numbers between 1 and n
+	- Prints the sum of all odd numbers between 1 and n
+	- Prints the multiplication table for any number n from 1 to 10
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+	- Count the digits of a number n
+	- Find the first and last digits of a number n
+	- Find the sum of the first and last digits
+	- Swap first and last digits
+	- Find sum of digits
+	- Find product of digits
+	- Print reverse of a number
+	- Check if a number is a palindrome
+	- Find the frequency of any digit in a number
+	- Print any number in words
+	- Find the power of any number
+	- Print all factors of a number
+	- Print factorial of any number
+	- Find GCD of two numbers
+	- Check if a number is prime
+	- Print all prime numbers between 1 and n
+	- Print all prime factors of a number
+	- Print Fibonacci series up for n terms
+
+"Thursday, June 29"
+ - '\0' = the null byte
+
+/*Assignments from June 29*/
+ - Find out what "make" command does
+ - Find out what isalpha and isblank do
+ - www.sci.brooklyn.cuny.edu/~nikolas/ColumbiaSummer
+ - rock, paper, scissors
+ - github
+
+"Friday, June 30"
+/*Pointers*/
+ - type *ptr =  -  declaration of ptr as a pointer
+ - *ptr         - returns the value where the pointer is at
+ - *(ptr + n)   - returns the value n values in front of the pointer location
+ - &thing		- address of thing
+ - type *ptr = &thing - pointer points to the address of thing
+ - ptr++		- moves the pointer over 1, but does not chaange the value of ptr
+
+"Monday, July 3"
+/*Exercises*/
+ - 1. Simple program to find an element in list
+	- List can be hardcoded
+	- User provides number
+	- Program responds whether the element is in the list
+ - 2. Same as 1, but also prints the location of the element
+ - 3. No hardcoded list
+ - 4. Build a script to create a text file with random numbers.
+	- How to write file
+	- How to use rand()
+ 	- Read from a file (.txt)
+ - 5. Find how to time your program
+
+/*Assignments*/
+ - Finish stuff from today
+ - Create a program that will play battleship with you
+
+"Wednesday, July 5"
+/*Assignments*/
+ - Modify sorting algorithms to count number of operations
+ - Consider which is the best case and which is the worst case for each algorithm and compare number of operations
+ - Try and find a way to graph your findings (size of input, number of operations)
+ - Figure out how to connect to the internet from your VM (if not already connected)
+ - Sign up at github.com and try to understand the basic commands (init, status, add, commit, push, pull)
+
+"Thursday, July 6"
+/*Assignments*/
+ - Put everything on github by Monday
+ - Given set of numbers where all elements occur an even amount of times except one, find the odd occuring number
+
+"Friday, July 7"
+/*Data Structures*/
+//Stack
+Last In First Out - The manner in which data is managed in the stack
+push()		- puts the item onto the top of the stack
+pop()		- throws away the item on the top of the stack
+isEmpty()	- checks if the stack is empty
+isFull()	- checks if the stack is full
+peek _ top	- looks at the last item on the stack at the top
+
+//Queue
+First In First Out - The manner in which data is managed in the queue
+enqueue()	- put something in the queue
+dequeue()	- delete an item in the queue by order of the queue
+isFull()	- checks if queue is full
+isEmpty()	- checks if queue is empty
+front()		- looks at the first item in the queue
+rear()		- looks at the last item in the queue
+
+
+
+
