@@ -83,6 +83,18 @@ void deallocate(struct Stack *stackname){
 	free(stackname);
 }
 
+void instructions_print()
+{
+	printf("Type \"push\" or \"push [element]\"to enter an element into the stack.\n");
+	printf("Type \"pop\" to remove the top element from the stack.\n");
+	printf("Type \"peek\" to print the top element from the stack.\n");
+	printf("Type \"isEmpty\" to check if the stack is empty.\n");
+	printf("Type \"isFull\" to check if the stack is full.\n");
+	printf("Type \"print\" to print the stack.\n");
+	printf("Type \"instructions\" to print these directions again.\n");
+	printf("Type \"exit\" to end the program.\n");
+}
+
 int main()
 {
 	int pushnum;
@@ -96,26 +108,17 @@ int main()
 	scanf("%s", &nameofstack);
 
 	struct Stack *ptr1 = Stack_create(nameofstack, (0));
-
-
-	printf("Type \"push\" or \"push [element]\"to enter an element into the stack.\n");
-	printf("Type \"pop\" to remove the top element from the stack.\n");
-	printf("Type \"peek\" to print the top element from the stack.\n");
-	printf("Type \"isEmpty\" to check if the stack is empty.\n");
-	printf("Type \"isFull\" to check if the stack is full.\n");
-	printf("Type \"print\" to print the stack.\n");
-	printf("Type \"instructions\" to print these directions again.\n");
-	printf("Type \"exit\" to end the program.\n");
+		
+	instructions_print();
 
 	while(1){
 		scanf("%s", &input);
-		printf("input = %s\n", input);
+		//printf("input = %s\n", input);
 		
 		if (strcmp(input,"push")==0){
 			printf("Enter element:\n");
 			scanf("%d", &pushnum);
 			push(ptr1, pushnum);
-			//printf("%d added to the stack.\n", pushnum);
 		}
 		else if (strcmp(input,"pop")==0){
 			pop(ptr1);
@@ -154,14 +157,7 @@ int main()
 			}	
 		}
 		else if (strcmp(input,"instructions")==0){
-			printf("Type \"push\" to enter an element into the stack.\n");
-			printf("Type \"pop\" to remove the top element from the stack.\n");
-			printf("Type \"peek\" to print the top element from the stack.\n");
-			printf("Type \"isEmpty\" to check if the stack is empty.\n");
-			printf("Type \"isFull\" to check if the stack is full.\n");
-			printf("Type \"print\" to print the stack.\n");
-			printf("Type \"instructions\" to print these directions again.\n");
-			printf("Type \"exit\" to end the program.\n");
+			instructions_print();
 		}
 		else if (strcmp(input,"exit")==0){
 			deallocate(ptr1);

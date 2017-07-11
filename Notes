@@ -201,6 +201,20 @@ isEmpty()	- checks if queue is empty
 front()		- looks at the first item in the queue
 rear()		- looks at the last item in the queue
 
+"Monday, July 10"
+/*Graph Theory*/
+ - Graph
+ - Circles = Vertices
+	- V = {v1, v2, v3, v4}
+ - Lines = Edges
+	- E = {e1, ..., e7}
+	- f:E->VxV
+ - degree of v = number of edges attached to the vertex
+	- deg(v) = degree of v
+
+ - Breadth First Search
+ - Depth First Search
+
 
 
 
